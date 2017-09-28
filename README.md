@@ -1,1 +1,4 @@
-# SMX
+ SMX
+
+Mi primer git
+
