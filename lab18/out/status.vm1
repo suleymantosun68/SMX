@@ -1,0 +1,21 @@
+● isc-dhcp-server.service - ISC DHCP IPv4 server
+   Loaded: loaded (/lib/systemd/system/isc-dhcp-server.service; enabled; vendor preset: enabled)
+   Active: active (running) since Mon 2017-10-30 15:05:32 UTC; 11min ago
+     Docs: man:dhcpd(8)
+ Main PID: 1611 (dhcpd)
+    Tasks: 1
+   Memory: 9.1M
+      CPU: 171ms
+   CGroup: /system.slice/isc-dhcp-server.service
+           └─1611 dhcpd -user dhcpd -group dhcpd -f -4 -pf /run/dhcp-server/dhcpd.pid -cf /etc/dhcp/dhcpd.conf enp0s8
+
+Oct 30 15:13:16 lab18vm1 dhcpd[1611]: DHCPREQUEST for 192.168.220.12 (192.168.220.102) from 08:00:27:bd:42:53 via enp0s8: lease owned by peer
+Oct 30 15:13:16 lab18vm1 dhcpd[1611]: DHCPREQUEST for 192.168.220.12 (192.168.220.102) from 08:00:27:bd:42:53 via 192.168.220.254: lease owned by peer
+Oct 30 15:15:05 lab18vm1 dhcpd[1611]: DHCPDISCOVER from 08:00:27:b0:89:c7 via 192.168.222.254: load balance to peer dhcp-failover
+Oct 30 15:15:06 lab18vm1 dhcpd[1611]: DHCPREQUEST for 192.168.222.13 (192.168.220.102) from 08:00:27:b0:89:c7 via 192.168.222.254: lease owned by peer
+Oct 30 15:16:52 lab18vm1 dhcpd[1611]: DHCPDISCOVER from 08:00:27:61:2e:21 via 192.168.224.254
+Oct 30 15:16:53 lab18vm1 dhcpd[1611]: ns1.example.org: host unknown.
+Oct 30 15:16:53 lab18vm1 dhcpd[1611]: ns2.example.org: host unknown.
+Oct 30 15:16:53 lab18vm1 dhcpd[1611]: DHCPOFFER on 192.168.224.13 to 08:00:27:61:2e:21 (lab18vm6) via 192.168.224.254
+Oct 30 15:16:53 lab18vm1 dhcpd[1611]: DHCPREQUEST for 192.168.224.13 (192.168.220.101) from 08:00:27:61:2e:21 (lab18vm6) via 192.168.224.254
+Oct 30 15:16:53 lab18vm1 dhcpd[1611]: DHCPACK on 192.168.224.13 to 08:00:27:61:2e:21 (lab18vm6) via 192.168.224.254

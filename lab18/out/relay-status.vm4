@@ -1,0 +1,21 @@
+● isc-dhcp-relay.service - ISC DHCP IPv4 relay
+   Loaded: loaded (/lib/systemd/system/isc-dhcp-relay.service; enabled; vendor preset: enabled)
+   Active: active (running) since Mon 2017-10-30 15:09:10 UTC; 9min ago
+     Docs: man:dhcrelay(8)
+ Main PID: 1340 (dhcrelay)
+    Tasks: 1
+   Memory: 7.2M
+      CPU: 89ms
+   CGroup: /system.slice/isc-dhcp-relay.service
+           └─1340 /usr/sbin/dhcrelay -d -4 -i enp0s8 -i enp0s9 -i enp0s10 192.168.220.101 192.168.220.102
+
+Oct 30 15:15:05 lab18vm4 sh[1340]: Forwarded BOOTREPLY for 08:00:27:b0:89:c7 to 192.168.222.13
+Oct 30 15:15:05 lab18vm4 sh[1340]: Forwarded BOOTREQUEST for 08:00:27:b0:89:c7 to 192.168.220.102
+Oct 30 15:15:05 lab18vm4 sh[1340]: Forwarded BOOTREQUEST for 08:00:27:b0:89:c7 to 192.168.220.101
+Oct 30 15:15:05 lab18vm4 sh[1340]: Forwarded BOOTREPLY for 08:00:27:b0:89:c7 to 192.168.222.13
+Oct 30 15:16:51 lab18vm4 sh[1340]: Forwarded BOOTREQUEST for 08:00:27:61:2e:21 to 192.168.220.102
+Oct 30 15:16:51 lab18vm4 sh[1340]: Forwarded BOOTREQUEST for 08:00:27:61:2e:21 to 192.168.220.101
+Oct 30 15:16:52 lab18vm4 sh[1340]: Forwarded BOOTREPLY for 08:00:27:61:2e:21 to 192.168.224.13
+Oct 30 15:16:52 lab18vm4 sh[1340]: Forwarded BOOTREQUEST for 08:00:27:61:2e:21 to 192.168.220.102
+Oct 30 15:16:52 lab18vm4 sh[1340]: Forwarded BOOTREQUEST for 08:00:27:61:2e:21 to 192.168.220.101
+Oct 30 15:16:52 lab18vm4 sh[1340]: Forwarded BOOTREPLY for 08:00:27:61:2e:21 to 192.168.224.13
