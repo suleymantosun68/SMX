@@ -1,0 +1,76 @@
+PING lab22vm1 (192.168.220.101) 56(84) bytes of data.
+64 bytes from lab22vm1 (192.168.220.101): icmp_seq=1 ttl=64 time=0.771 ms
+64 bytes from lab22vm1 (192.168.220.101): icmp_seq=2 ttl=64 time=0.621 ms
+
+--- lab22vm1 ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1002ms
+rtt min/avg/max/mdev = 0.621/0.696/0.771/0.075 ms
+PING lab22vm2 (192.168.220.102) 56(84) bytes of data.
+64 bytes from lab22vm2 (192.168.220.102): icmp_seq=1 ttl=64 time=0.478 ms
+64 bytes from lab22vm2 (192.168.220.102): icmp_seq=2 ttl=64 time=0.652 ms
+
+--- lab22vm2 ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1003ms
+rtt min/avg/max/mdev = 0.478/0.565/0.652/0.087 ms
+PING lab22vm3 (127.0.0.1) 56(84) bytes of data.
+64 bytes from lab22vm3 (127.0.0.1): icmp_seq=1 ttl=64 time=0.047 ms
+64 bytes from lab22vm3 (127.0.0.1): icmp_seq=2 ttl=64 time=0.237 ms
+
+--- lab22vm3 ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1003ms
+rtt min/avg/max/mdev = 0.047/0.142/0.237/0.095 ms
+PING lab22vm4 (192.168.220.104) 56(84) bytes of data.
+64 bytes from lab22vm4 (192.168.220.104): icmp_seq=1 ttl=64 time=0.338 ms
+64 bytes from lab22vm4 (192.168.220.104): icmp_seq=2 ttl=64 time=0.633 ms
+
+--- lab22vm4 ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1004ms
+rtt min/avg/max/mdev = 0.338/0.485/0.633/0.149 ms
+PING lab22vm1.lab22.stosun.org (192.168.220.101) 56(84) bytes of data.
+64 bytes from lab22vm1 (192.168.220.101): icmp_seq=1 ttl=64 time=0.340 ms
+64 bytes from lab22vm1 (192.168.220.101): icmp_seq=2 ttl=64 time=0.692 ms
+
+--- lab22vm1.lab22.stosun.org ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1002ms
+rtt min/avg/max/mdev = 0.340/0.516/0.692/0.176 ms
+PING lab22vm2.lab22.stosun.org (192.168.220.102) 56(84) bytes of data.
+64 bytes from lab22vm2 (192.168.220.102): icmp_seq=1 ttl=64 time=0.365 ms
+64 bytes from lab22vm2 (192.168.220.102): icmp_seq=2 ttl=64 time=0.747 ms
+
+--- lab22vm2.lab22.stosun.org ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1003ms
+rtt min/avg/max/mdev = 0.365/0.556/0.747/0.191 ms
+PING lab22vm3.lab22.stosun.org (192.168.220.103) 56(84) bytes of data.
+64 bytes from 192.168.220.103: icmp_seq=1 ttl=64 time=0.035 ms
+64 bytes from 192.168.220.103: icmp_seq=2 ttl=64 time=0.227 ms
+
+--- lab22vm3.lab22.stosun.org ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1001ms
+rtt min/avg/max/mdev = 0.035/0.131/0.227/0.096 ms
+PING lab22vm4.lab22.stosun.org (192.168.220.104) 56(84) bytes of data.
+64 bytes from lab22vm4 (192.168.220.104): icmp_seq=1 ttl=64 time=0.414 ms
+64 bytes from lab22vm4 (192.168.220.104): icmp_seq=2 ttl=64 time=0.514 ms
+
+--- lab22vm4.lab22.stosun.org ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1001ms
+rtt min/avg/max/mdev = 0.414/0.464/0.514/0.050 ms
+
+; <<>> DiG 9.10.3-P4-Ubuntu <<>> lab22.stosun.org
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 3190
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;lab22.stosun.org.		IN	A
+
+;; AUTHORITY SECTION:
+lab22.stosun.org.	604800	IN	SOA	lab22vm1.lab22.stosun.org.lab22.stosun.org. admin.lab22.stosun.org.lab22.stosun.org. 3 604800 86400 2419200 604800
+
+;; Query time: 0 msec
+;; SERVER: 192.168.220.101#53(192.168.220.101)
+;; WHEN: Mon Nov 13 15:22:19 UTC 2017
+;; MSG SIZE  rcvd: 113
+
